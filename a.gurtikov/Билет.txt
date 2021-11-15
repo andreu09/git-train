@@ -1,0 +1,93 @@
+#include <iostream>
+#include <string>
+
+
+
+
+using namespace std;
+
+
+
+
+int main() {
+
+
+	setlocale(LC_ALL, "RU");
+
+	int remove = 1;
+
+	while (remove == 1)
+	{
+
+		system("cls");
+
+		string ticket;
+
+		cout << "Введите номер билета для проверки на то является ли он счастливым: ";
+
+		cin >> ticket;
+
+
+		int size = ticket.length();
+
+		while (size % 2 != 0) {
+			cout << "Введите четное количество символов!" << endl ;
+			cout << "Введите номер билета для проверки на то является ли он счастливым: ";
+			cin >> ticket;
+			size = ticket.length();
+		}
+
+		int number = stoi(ticket);
+
+
+		int* numbers = new int[size];
+
+
+		for (int i = size - 1; i >= 0; i--)
+		{
+			numbers[i] = number % 10;
+			number /= 10;
+		}
+
+		int firtsSum = 0, secSum = 0;
+
+		for (int i = 0; i <= size / 2 - 1; i++)
+		{
+			firtsSum += numbers[i];
+		}
+
+		for (int i = size / 2; i < size; i++)
+		{
+			secSum += numbers[i];
+		}
+
+		if (firtsSum == secSum)
+		{
+			cout << "Урааа! Ваш билет счастливый!!!";
+		}
+		else
+		{
+			cout << "Увы, ваш билет не счастливый...";
+		}
+
+		delete[] numbers;
+		numbers = nullptr;
+
+
+		cout << endl << endl << "Хотите проверить еще ? \n 1 - ДА \n 2 - НЕТ" << endl;
+
+
+		cin >> remove;
+
+		while (remove != 1 && remove != 2)
+		{
+			cout << "Ошибка! Пункт меню отсутствует! " << endl;
+			cout << "Хотите проверить еще слово? \n 1 - ДА \n 2 - НЕТ" << endl;
+			cin >> remove;
+
+		}
+
+	}
+
+	return 0;
+}
