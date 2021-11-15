@@ -1,0 +1,53 @@
+print ('enter n')
+n=int(input())
+print ('enter the minimum number')
+minx=int(input())
+print ('enter the miximum number')
+maxx=int(input())
+k=2*n-1
+
+import numpy as np
+nrows = k
+ncols = k
+matrix = np.random.randint(minx,maxx, size=(nrows,ncols))
+v_nrows=n-1
+v_ncols=n-1
+
+centr=matrix[v_nrows,v_ncols]
+centr = centr.tolist()
+A=list()
+A.append(centr)
+
+a2=list();
+
+for i in range(1,k-n+1):
+    v_rows=v_nrows
+    v_cols=v_ncols
+    
+    a1=matrix[v_rows-i+1:v_rows+i+1,v_cols-i]
+    #a1=a1[::-1]
+    a1 = a1.tolist()
+    a2=a2+a1
+   
+    
+    
+    a1=matrix[v_rows+i,v_cols-i+1:v_cols+i+1]
+    #a1=a1[::-1]
+    a1 = a1.tolist()
+    a2=a2+a1
+    
+    a1=matrix[v_rows-i:v_rows+i,v_cols+i]
+    a1=a1[::-1]
+    a1 = a1.tolist()
+    a2=a2+a1
+    
+    a1=matrix[v_rows-i,v_cols-i:v_cols+i]
+    a1=a1[::-1]
+    a1 = a1.tolist()
+    a2=a2+a1
+    
+
+A=A+a2
+str1 = ' '.join(str(i) for i in A)
+print (matrix)
+print (str1)

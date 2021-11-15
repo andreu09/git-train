@@ -1,0 +1,34 @@
+print ('enter the number of items')
+while True:
+    n=int(input())
+    if n >= 0:
+        break
+    else :
+        print ('uncorrect number of items, enter the number of items greater than 0')
+print ('enter the minimum number and the maximum number through a space')
+while True:
+    range_x=list(map(int, input().split(' ')))
+    if len(range_x)==2:
+        maxx=range_x[1]
+        minx=range_x[0]
+        break
+    else:
+        print ('enter the minimum number and the maximum number through a space')
+        
+while True:
+    if maxx >= minx:
+        break
+    else :
+        print ('uncorrect, enter so: the minimum number < the maximum number')
+        
+import numpy as np
+array = np.random.randint(minx,maxx,n)
+print ('initial array:', array)
+
+ink=0
+for i in range(1,n):
+    while array[i-1]>= array[i]:
+        array[i]=array[i]+1
+        ink=ink+1
+print ('final array:',array)
+print('number of steps:', ink)

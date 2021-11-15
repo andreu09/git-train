@@ -1,0 +1,12 @@
+print ('enter the ticket number')
+while True:
+    number=(input())
+    number = list(map(int, str(number)))
+    if len(number) % 2==0:
+        break
+    else :
+        print ('uncorrect number, enter an even number of the ticket number')
+if sum(number[:int(len(number)/2)]) == sum(number[int(len(number)/2):]):
+    print ( 'lucky ticket')
+else:
+    print ('unlucky ticket')
