@@ -1,0 +1,134 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+
+
+//функция заполнения матрицы случайными числами
+void createMatrix(int** arr, int& n) {
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            arr[i][j] = rand() % 10;
+        }
+
+    }
+
+}
+
+//функция вывода матрицы в консоль
+void printMatrix(int** arr, int& n) {
+
+    cout << "\n \n""Получившаяся матрица из случайных чисел: \n";
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << arr[i][j];
+        }
+
+        cout << endl;
+    }
+    cout << endl ;
+}
+
+
+//функция вывода в консоль чисел из матрицы по спирали
+void printAnswer(int** arr, int& n)
+{
+    int step = -1, iter = 1;
+    cout << "вывод по спирали: " << arr[n / 2][n / 2] << " ";
+
+    int i = n / 2, j = n / 2; //нашли центр матрицы
+    int k = 0, l = 0; //итераторы
+    int out = 1; //счетчик для выхода из цикла отрисовки
+
+link:
+    while (out != n * n)
+    {
+
+        for (; k < iter; k++)
+        {
+            if (j + step < n && j + step >= 0) //если совершая шаг мы не покидаем пределы матрицы
+
+            {
+                cout << arr[i][j + step] << " "; //выводим число в консоль
+                out++; // увеличиваем счетчик отвечающий за выход
+                if (out == n * n)goto link; //если счетчик равен количеству чисел в матрице идем проверять условие главного цикла и покидаем его
+            }
+
+            if (iter > 1 && k + 1 < iter) step > 0 ? step++ : step--;
+
+        }
+        j = j + step;
+        k = 0;
+        step > 0 ? step = 1 : step = -1;
+        step *= -1;
+
+        for (; l < iter; l++)
+        {
+            if (i + step < n && i + step >= 0)
+            {
+                cout << arr[i + step][j] << " ";
+                out++;
+                if (out == n * n)goto link;
+            }
+            if (iter > 1 && l + 1 < iter) step > 0 ? step++ : step--;
+        }
+        i = i + step;
+        step > 0 ? step = 1 : step = -1;
+        iter++;
+        l = 0;
+    }
+}
+
+
+int main()
+{
+    setlocale(LC_ALL, "RU");
+    srand(time(0));
+
+
+    int n;
+
+    cout << "Введите n, для создания квадратной матрицы размером 2n-1 X 2n-1, n = ";
+    cin >> n;
+    while (n <= 0) {
+        cout << "Введите число больше нуля! n = ";
+        cin >> n;
+    }
+
+    n = n * 2 - 1;
+
+
+    int** matrix = new int* [n];
+
+    for (int i = 0; i < n; i++)
+    {
+        matrix[i] = new int[n];
+    }
+
+
+
+    createMatrix(matrix, n);
+    printMatrix(matrix, n);
+    printAnswer(matrix, n);
+
+
+
+
+
+    for (int i = 0; i < n; i++)
+    {
+        delete[] matrix[i];
+    }
+
+    delete[] matrix;
+
+    cout << endl << endl;
+
+    return 0;
+}

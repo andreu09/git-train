@@ -1,0 +1,81 @@
+#include <iostream>
+
+
+using namespace std;
+
+
+
+
+int main() {
+
+
+	setlocale(LC_ALL, "RU");
+
+	int remove = 1;
+
+	while (remove == 1)
+	{
+
+		system("cls");
+
+
+		string word;
+
+		cout << "Введите слово для проверки на то является ли оно палиндромом: ";
+
+		cin >> word;
+
+		int size = word.length();
+
+
+		string* firstWord = new string[size];
+		string* secWord = new string[size];
+
+
+		for (int i = 0, j = size - 1; i < size; i++, j--)
+		{
+			firstWord[i] = word[i];
+			secWord[i] = word[j];
+		}
+
+
+
+		for (int i = 0; i < size; i++)
+		{
+			if (firstWord[i] != secWord[i]) {
+				cout << "False! Строка не палиндром!" << endl;
+				break;
+			}
+			else if (i == size-1)
+			{
+				cout << "True! Строка палиндром!" << endl;
+				break;
+			}
+		}
+
+		delete[] firstWord;
+		firstWord = nullptr;
+
+		delete[] secWord;
+		secWord = nullptr;
+
+
+
+		cout << endl << endl << "Хотите проверить еще слово? \n 1 - ДА \n 2 - НЕТ" << endl;
+
+
+
+		cin >> remove;
+
+		while (remove != 1 && remove != 2)
+		{
+			cout << "Ошибка! Пункт меню отсутствует! " << endl;
+			cout << "Хотите проверить еще слово? \n 1 - ДА \n 2 - НЕТ" << endl;
+			cin >> remove;
+
+		}
+
+	}
+
+	return 0;
+}
