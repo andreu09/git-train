@@ -1,0 +1,14 @@
+C:\Users\andrey\source\repos\палиндром\палиндром\bin\Debug\netcoreapp3.1\палиндром.exe
+C:\Users\andrey\source\repos\палиндром\палиндром\bin\Debug\netcoreapp3.1\палиндром.deps.json
+C:\Users\andrey\source\repos\палиндром\палиндром\bin\Debug\netcoreapp3.1\палиндром.runtimeconfig.json
+C:\Users\andrey\source\repos\палиндром\палиндром\bin\Debug\netcoreapp3.1\палиндром.runtimeconfig.dev.json
+C:\Users\andrey\source\repos\палиндром\палиндром\bin\Debug\netcoreapp3.1\палиндром.dll
+C:\Users\andrey\source\repos\палиндром\палиндром\bin\Debug\netcoreapp3.1\палиндром.pdb
+C:\Users\andrey\source\repos\палиндром\палиндром\obj\Debug\netcoreapp3.1\палиндром.csproj.AssemblyReference.cache
+C:\Users\andrey\source\repos\палиндром\палиндром\obj\Debug\netcoreapp3.1\палиндром.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andrey\source\repos\палиндром\палиндром\obj\Debug\netcoreapp3.1\палиндром.AssemblyInfoInputs.cache
+C:\Users\andrey\source\repos\палиндром\палиндром\obj\Debug\netcoreapp3.1\палиндром.AssemblyInfo.cs
+C:\Users\andrey\source\repos\палиндром\палиндром\obj\Debug\netcoreapp3.1\палиндром.csproj.CoreCompileInputs.cache
+C:\Users\andrey\source\repos\палиндром\палиндром\obj\Debug\netcoreapp3.1\палиндром.dll
+C:\Users\andrey\source\repos\палиндром\палиндром\obj\Debug\netcoreapp3.1\палиндром.pdb
+C:\Users\andrey\source\repos\палиндром\палиндром\obj\Debug\netcoreapp3.1\палиндром.genruntimeconfig.cache
