@@ -1,0 +1,14 @@
+C:\Users\andrey\Desktop\go\билет\билет\bin\Debug\netcoreapp3.1\билет.exe
+C:\Users\andrey\Desktop\go\билет\билет\bin\Debug\netcoreapp3.1\билет.deps.json
+C:\Users\andrey\Desktop\go\билет\билет\bin\Debug\netcoreapp3.1\билет.runtimeconfig.json
+C:\Users\andrey\Desktop\go\билет\билет\bin\Debug\netcoreapp3.1\билет.runtimeconfig.dev.json
+C:\Users\andrey\Desktop\go\билет\билет\bin\Debug\netcoreapp3.1\билет.dll
+C:\Users\andrey\Desktop\go\билет\билет\bin\Debug\netcoreapp3.1\билет.pdb
+C:\Users\andrey\Desktop\go\билет\билет\obj\Debug\netcoreapp3.1\билет.csproj.AssemblyReference.cache
+C:\Users\andrey\Desktop\go\билет\билет\obj\Debug\netcoreapp3.1\билет.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andrey\Desktop\go\билет\билет\obj\Debug\netcoreapp3.1\билет.AssemblyInfoInputs.cache
+C:\Users\andrey\Desktop\go\билет\билет\obj\Debug\netcoreapp3.1\билет.AssemblyInfo.cs
+C:\Users\andrey\Desktop\go\билет\билет\obj\Debug\netcoreapp3.1\билет.csproj.CoreCompileInputs.cache
+C:\Users\andrey\Desktop\go\билет\билет\obj\Debug\netcoreapp3.1\билет.dll
+C:\Users\andrey\Desktop\go\билет\билет\obj\Debug\netcoreapp3.1\билет.pdb
+C:\Users\andrey\Desktop\go\билет\билет\obj\Debug\netcoreapp3.1\билет.genruntimeconfig.cache
