@@ -1,0 +1,8 @@
+﻿  Task_2.cpp
+C:\Users\79106\source\repos\Tasks\Task_2\Task_2.cpp(15,30): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода
+  1 of 117 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Task_2.vcxproj -> C:\Users\79106\source\repos\Tasks\x64\Release\Task_2.exe
